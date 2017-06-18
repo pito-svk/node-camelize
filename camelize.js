@@ -12,6 +12,8 @@ function customCamelCase (s) {
 function camelize (o) {
   if (typeof o === 'string') {
     return customCamelCase(o)
+  } else if (Array.isArray(o)) {
+    return o.map(k => camelize(k))
   } else {
     return mapKeys(o, (_, k) => customCamelCase(k))
   }
