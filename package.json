@@ -1,6 +1,6 @@
 {
   "name": "node-camelize",
-  "version": "0.0.4",
+  "version": "0.1.4",
   "description": "",
   "dependencies": {
     "lodash.camelcase": "^4.3.0",
